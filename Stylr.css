@@ -8,15 +8,15 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #222;
+  color: #0a0a0a;
   line-height: 1.6;
-  background-color: #140630;
+  background-color: #030107;
 
 
 }
 
 header {
-  background: #040307;
+  background: #59037a;
   color: #e8e7eb;
   padding: 0.5rem 1rem;
   position: sticky;
@@ -25,6 +25,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 03px;
+
+}
+
+h1 {
+  color: rgb(209, 230, 22);
 }
 
 header h1 {
@@ -32,7 +38,7 @@ header h1 {
 }
 
 nav a {
-  color: #5b07c9;
+  color: rgb(209, 230, 22);
   margin-left: 1rem;
   text-decoration: none;
   font-weight: bold;
@@ -40,9 +46,7 @@ nav a {
 }
 
 .hero {
-
   color: #5003df;
-  padding: 300px 20px;
   text-align: center;
 }
 
@@ -57,14 +61,18 @@ nav a {
   transition: background 0.3s ease;
 }
 
-.all {
-  margin-top: 4px;
-  background-image: url('./imagem/Top.PNG');
-  background-repeat: no-repeat;
-  align-items: center;
+
+img {
   justify-content: center;
-  background-position: center;
+  align-items: center;
+  text-align: center;
+  display: block;
+  margin: auto auto;
+  height: 650px;
+  border-radius: 20px;
+
 }
+
 
 .btn:hover {
   background: #7e05f0;
@@ -82,6 +90,14 @@ nav a {
   transition: background 0.3s ease;
 }
 
+#sobre {
+  background: color 0;
+  ;
+  border-radius: 30px;
+  width: 300px;
+  padding: 30px;
+}
+
 section {
   padding: 60px 20px;
   max-width: 1000px;
@@ -92,11 +108,11 @@ section h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: center;
-  color: rgb(125, 6, 204);
+  color: rgb(209, 230, 22);
 }
 
 section p {
-  color: #fff;
+  color: #ffffff;
   font-size: 1.1rem;
   text-align: center;
   max-width: 700px;
@@ -105,7 +121,7 @@ section p {
 
 footer {
   background: #080808;
-  color: #fffcfc;
+  color: rgb(209, 230, 22);
   text-align: center;
   padding: 1rem;
 }
@@ -113,5 +129,15 @@ footer {
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 2rem;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
   }
 }
