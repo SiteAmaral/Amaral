@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  background: #59037a;
+  background: #30034e;
   color: #e8e7eb;
   padding: 0.5rem 1rem;
   position: sticky;
@@ -45,6 +45,11 @@ nav a {
 
 }
 
+nav a:hover {
+  background-color: rgb(209, 230, 22);
+  color: #030107;
+}
+
 .hero {
   color: #5003df;
   text-align: center;
@@ -63,10 +68,10 @@ nav a {
 
 
 img {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: block;
+  justify-content: space-between;
+  width: 450px;
+
+  display: inline-block;
   margin: auto auto;
   height: 650px;
   border-radius: 20px;
@@ -81,13 +86,17 @@ img {
 .SocialMedia {
   background: #530caf;
   color: #ffffff;
-  padding: 0.73rem 1.5rem;
+  padding: 12px 12px;
   border: none;
 
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   transition: background 0.3s ease;
+}
+
+.SocialMedia:hover {
+  background-color: #7e05f0;
 }
 
 #sobre {
@@ -126,7 +135,7 @@ footer {
   padding: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768) {
   .hero h2 {
     font-size: 2rem;
   }
@@ -136,8 +145,10 @@ footer {
   }
 
   img {
+    display: grid;
+    align-items: center;
     border-radius: 20px;
-    width: 100%;
+    width: 200px;
     height: 100%;
   }
 }
