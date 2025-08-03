@@ -70,7 +70,6 @@ nav a:hover {
 img {
   justify-content: space-between;
   width: 450px;
-
   display: inline-block;
   margin: auto auto;
   height: 650px;
@@ -135,7 +134,11 @@ footer {
   padding: 1rem;
 }
 
-@media (max-width: 768) {
+@media (max-width: 768px) {
+  nav {
+    width: 100%;
+  }
+
   .hero h2 {
     font-size: 2rem;
   }
@@ -145,10 +148,14 @@ footer {
   }
 
   img {
+
+    margin-bottom: 10px;
     display: grid;
     align-items: center;
     border-radius: 20px;
-    width: 200px;
-    height: 100%;
+    width: 100%;
+
+
+
   }
 }
